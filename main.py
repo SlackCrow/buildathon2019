@@ -1,12 +1,10 @@
-from flask import Flask
-from data import Articles
+from flask import Flask, render_template
 app = Flask(__name__)
 
 
 # Main Web-page path
 @app.route("/")
-def inputPage():
-    #return "Hello World!"
+def main():
     return render_template('hello.html')
 
 
