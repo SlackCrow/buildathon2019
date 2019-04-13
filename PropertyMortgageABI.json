@@ -1,0 +1,69 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "houseAddress",
+				"type": "string"
+			},
+			{
+				"name": "owner",
+				"type": "string"
+			},
+			{
+				"name": "mortgageAmount",
+				"type": "uint256"
+			},
+			{
+				"name": "currentBalance",
+				"type": "uint256"
+			},
+			{
+				"name": "status",
+				"type": "string"
+			}
+		],
+		"name": "emitMortgage",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_houseAddress",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_owner",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_mortgageAmount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "_currentBalance",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "_status",
+				"type": "string"
+			}
+		],
+		"name": "Mortgage",
+		"type": "event"
+	}
+]

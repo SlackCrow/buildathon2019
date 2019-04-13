@@ -1,0 +1,60 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "houseAddress",
+				"type": "string"
+			},
+			{
+				"name": "owner",
+				"type": "string"
+			},
+			{
+				"name": "taxYear",
+				"type": "uint256"
+			},
+			{
+				"name": "taxesRecieved",
+				"type": "bool"
+			}
+		],
+		"name": "emitTax",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_houseAddress",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_owner",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_taxYear",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "_taxesRecieved",
+				"type": "bool"
+			}
+		],
+		"name": "Tax",
+		"type": "event"
+	}
+]
