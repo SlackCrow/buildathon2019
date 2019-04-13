@@ -2,6 +2,7 @@ pragma solidity ^0.5.0;
 
 contract PropertySale {
 
+    string public houseAddress;
     string public buyerName;
     string public sellerName;
     string public date;
@@ -10,6 +11,7 @@ contract PropertySale {
 
     event Sale(
         address _from,
+        string _houseAddress,
         string _buyerName,
         string _sellerName,
         string _date,
@@ -17,8 +19,8 @@ contract PropertySale {
         uint _price
     );
 
-    function emitSale() public {
-        emit Sale(msg.sender,buyerName,sellerName,date,transactionType,price);
+    function emitSale() public{
+        emit Sale(msg.sender,houseAddress,buyerName,sellerName,date,transactionType,price);
     }
 
     function setBuyer(string memory nm) public {
@@ -35,19 +37,21 @@ contract PropertySale {
 
 contract PropertyTax {
 
+    string public houseAddress;
     string public owner;
     uint public taxYear;
     bool public taxesRecieved;
 
     event Tax(
         address _from,
+        string _houseAddress,
         string _owner,
         uint _taxYear,
         bool _taxesRecieved
     );
 
     function emitTax() public {
-        emit Tax(msg.sender, owner, taxYear, taxesRecieved);
+        emit Tax(msg.sender, houseAddress, owner, taxYear, taxesRecieved);
     }
 
     function setOwner(string memory _owner) public {
@@ -65,6 +69,7 @@ contract PropertyTax {
 
 contract PropertyMortgage {
 
+    string public houseAddress;
     string public owner;
     uint public mortgageAmount;
     uint public currentBalance;
@@ -72,6 +77,7 @@ contract PropertyMortgage {
 
     event Mortgage(
         address _from,
+        string _houseAddress,
         string _owner,
         uint _mortgageAmount,
         uint _currentBalance,
@@ -79,7 +85,7 @@ contract PropertyMortgage {
     );
 
     function emitMortgage() public{
-        emit Mortgage(msg.sender, owner, mortgageAmount, currentBalance, status);
+        emit Mortgage(msg.sender, houseAddress, owner, mortgageAmount, currentBalance, status);
     }
 
     function setOwner(string memory _owner) public {
@@ -102,6 +108,7 @@ contract PropertyMortgage {
 
 contract PropertyJudgement {
 
+    string public houseAddress;
     string public owner;
     uint public caseNumber;
     string public description;
@@ -110,6 +117,7 @@ contract PropertyJudgement {
 
     event Judgement(
         address _from,
+        string _houseAddress,
         string _owner,
         uint caseNumber,
         string description,
@@ -118,7 +126,7 @@ contract PropertyJudgement {
     );
 
     function emitJudgement() public {
-        emit Judgement(msg.sender, owner, caseNumber, description, fileDate, amount);
+        emit Judgement(msg.sender, houseAddress, owner, caseNumber, description, fileDate, amount);
     }
 
     function setOwner(string memory _owner) public {
