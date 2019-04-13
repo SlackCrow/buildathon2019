@@ -13,21 +13,21 @@ body {
 .topnav50 {
     position: fixed;
     top: 2px;
-    left: 0;
+    left: 38%;
     font-family: "sans-serif", Arial;
     font-size: 30px;
     /*text-decoration: underline;*/
     font-weight: bold;
-    width: 40%;
+    width: 35%;
     height: 100px;
     padding: 12px;
-    margin: 8px 0;
+    margin: 2px 0;
 }
 
 .topnav50_2 {
     position: fixed;
     top: 2px;
-    left: 80px;
+    left: 52%;
     font-family: "sans-serif", Arial;
     font-size: 30px;
     /*text-decoration: underline;*/
@@ -35,7 +35,7 @@ body {
     width: 40%;
     height: 100px;
     padding: 12px;
-    margin: 8px 0;
+    margin: 2px 0;
 }
 
 .topnav {
@@ -47,7 +47,7 @@ body {
     text-decoration: underline;
     font-weight: bold;
     width: 100%;
-    height: 80px;
+    height: 120px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-bottom-style: double;
@@ -89,6 +89,7 @@ body {
 .headerLabelMT {
   color: white;
   font-weight: bold;
+  font-size: 80px;
   font-family: "sans-serif", "Times New Roman";
   /*padding: 8px;*/
 }
@@ -96,6 +97,7 @@ body {
 .headerLabelBank {
   color: white;
   font-weight: lighter;
+    font-size: 80px;
   font-family: "sans-serif", "Arial";
   /*padding: 8px;*/
 }
