@@ -8,6 +8,19 @@ contract PropertySale {
     string public transactionType;
     uint public price;
 
+    event Sale(
+        address _from,
+        string _buyerName,
+        string _sellerName,
+        string _date,
+        string _transactionType,
+        uint _price
+    );
+
+    function emitSale() public {
+        emit Sale(msg.sender,buyerName,sellerName,date,transactionType,price);
+    }
+
     function setBuyer(string memory nm) public {
         buyerName = nm;
     }
