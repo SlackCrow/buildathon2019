@@ -8,15 +8,21 @@ def main():
     return redirect(url_for('login'))
 
 
+# Route to login page
 @app.route("/login", methods=['GET', 'POST'])
 def login():
+    # Check for re-direct from login
     if request.method == 'POST':
         return redirect("home.html")
     return render_template("login.html")
 
 
-@app.route("/home", methods=['GET','POST'])
+# Route for home page
+@app.route("/home", methods=['GET', 'POST'])
 def home():
+    # Verification of blockchain history to determine...
+    # If there are: outstanding liens, unpaid taxes, or outstanding judgements, then return failure_page
+    # Else Return success page
     return render_template("home.html")
 
 
