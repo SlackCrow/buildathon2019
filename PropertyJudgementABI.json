@@ -1,0 +1,78 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "houseAddress",
+				"type": "string"
+			},
+			{
+				"name": "owner",
+				"type": "string"
+			},
+			{
+				"name": "caseNumber",
+				"type": "uint256"
+			},
+			{
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"name": "fileDate",
+				"type": "string"
+			},
+			{
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "emitJudgement",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_houseAddress",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_owner",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "caseNumber",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "fileDate",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Judgement",
+		"type": "event"
+	}
+]

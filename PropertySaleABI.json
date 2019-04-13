@@ -1,0 +1,78 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "houseAddress",
+				"type": "string"
+			},
+			{
+				"name": "buyerName",
+				"type": "string"
+			},
+			{
+				"name": "sellerName",
+				"type": "string"
+			},
+			{
+				"name": "date",
+				"type": "string"
+			},
+			{
+				"name": "transactionType",
+				"type": "string"
+			},
+			{
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "emitSale",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_houseAddress",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_buyerName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_sellerName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_date",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_transactionType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_price",
+				"type": "uint256"
+			}
+		],
+		"name": "Sale",
+		"type": "event"
+	}
+]
