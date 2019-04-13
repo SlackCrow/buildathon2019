@@ -23,7 +23,17 @@ def home():
     # Verification of blockchain history to determine...
     # If there are: outstanding liens, unpaid taxes, or outstanding judgements, then return failure_page
     # Else Return success page
+    if request.method == 'POST':
+        return redirect("verification_failure.html")
     return render_template("home.html")
+
+@app.route("/verification_success", methods=['GET', 'POST'])
+def verification_success():
+    return render_template("verification_success.html")
+
+@app.route("/verification_failure", methods=['GET', 'POST'])
+def verification_failure():
+    return render_template("verification_failure.html")
 
 
 if __name__ == '__main__':

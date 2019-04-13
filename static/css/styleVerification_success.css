@@ -129,11 +129,37 @@ body {
 }
 
 .middleCol {
+    color: #96c93c;
     float: left;
     width: 50%;
     margin-top: 30px;
     /*margin-left: 100px;*/
-    margin-left: 36%;
+    margin-left: 25%;
+    padding: 14px 14px;
+
+    /*border: 2px solid #000000;*/
+    /*border-radius: 4px;*/
+    /*background-color: #272828;*/
+}
+
+.middleColValid {
+    color: #96c93c;
+    float: right;
+    width: 65%;
+    /*margin-top: 12px;*/
+    height: 2px;
+
+    /*border: 2px solid #000000;*/
+    /*border-radius: 4px;*/
+    /*background-color: #272828;*/
+}
+
+.middleColSuccess {
+    float: left;
+    width: 50%;
+    /*margin-top: 2px;*/
+    /*margin-left: 100px;*/
+    margin-left: 34%;
     padding: 14px 14px;
 
     /*border: 2px solid #000000;*/
@@ -145,7 +171,7 @@ body {
 .middleBotCol {
     float: left;
     width: 65%;
-    /*margin-top: 2px;*/
+    margin-top: 12px;
     height: 45px;
     margin-left: 19%;
 
@@ -243,12 +269,4 @@ button#btn_submit:active {
     background-color: #3a3333;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
-}
-form {
-    display:table;/* shrinks to fit content */
-    margin:auto;
-}
-
-input {
-    width: 100%;
 }
